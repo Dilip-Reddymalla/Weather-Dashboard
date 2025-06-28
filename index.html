@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Dashboard</h1>
+    <div class="input-group">
+      <input type="text" id="cityInput" placeholder="Enter city name" oninput="autocompleteCity()" autocomplete="off" />
+      <div id="suggestions" class="suggestions-box"></div>
+    </div>
+    <button onclick="getWeather()">Get Weather</button>
+    
+    <div id="weatherResult" class="weather-box">
+      
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
